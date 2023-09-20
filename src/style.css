@@ -1,33 +1,31 @@
 body {
   background-color: green;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
 }
 
 .card {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: white;
-  margin: auto;
   height: 600px;
   width: 400px;
   font-size: 50px;
   border: 1px solid red;
   border-radius: 20px;
-  padding: 20px;
-  position: relative;
 }
 
 .top-pintas {
-  position: absolute;
-  top: 20px;
-  left: 20px;
   font-size: 80px;
 }
 .number {
-  position: absolute;
+  align-self: center;
   font-size: 80px;
 }
 .bottom-pintas {
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
+  display: flex;
+  justify-content: end;
   font-size: 80px;
 }

@@ -20,7 +20,7 @@ window.onload = () => {
       "10",
       "J",
       "Q",
-      "K",
+      "K"
     ];
     let ranNum = Math.floor(Math.random() * numbers.length);
     return numbers[ranNum];
@@ -31,7 +31,10 @@ window.onload = () => {
     let ranPin = Math.floor(Math.random() * pintas.length);
     return pintas[ranPin];
   };
+
+  let pintas = randomPintas();
+
   document.querySelector(".number").innerHTML = randomNumber();
-  document.querySelector(".top-pintas").innerHTML = randomPintas();
-  document.querySelector(".bottom-pintas").innerHTML = randomPintas();
+  document.querySelector(".top-pintas").innerHTML = pintas;
+  document.querySelector(".bottom-pintas").innerHTML = pintas;
 };
